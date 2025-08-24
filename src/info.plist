@@ -116,9 +116,9 @@
 				<key>keyword</key>
 				<string>!!</string>
 				<key>subtext</key>
-				<string></string>
+				<string>Start another instance of the application.</string>
 				<key>text</key>
-				<string></string>
+				<string>Launch New Instance</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -190,8 +190,10 @@ You can also assign a hotkey to instantly start a fresh copy of the selected app
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>pedroinnecco.com</string>
 </dict>
