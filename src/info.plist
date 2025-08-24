@@ -115,6 +115,8 @@
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>!!</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Start another instance of the application.</string>
 				<key>text</key>
