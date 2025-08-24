@@ -92,6 +92,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -n -a "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4261CC7F-F5DC-43D9-9CB1-2ABDE5239CA2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
 				<integer>0</integer>
 				<key>filetypes</key>
@@ -131,29 +154,6 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>open -n -a "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>4261CC7F-F5DC-43D9-9CB1-2ABDE5239CA2</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>This workflow lets you spawn a new process of any macOS app.  
@@ -171,23 +171,23 @@ You can also assign a hotkey to instantly start a fresh copy of the selected app
 		<key>4261CC7F-F5DC-43D9-9CB1-2ABDE5239CA2</key>
 		<dict>
 			<key>xpos</key>
-			<real>370</real>
+			<real>280</real>
 			<key>ypos</key>
-			<real>425</real>
+			<real>170</real>
 		</dict>
 		<key>5368E260-051A-4B02-A548-79636ACFED99</key>
 		<dict>
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>210</real>
+			<real>170</real>
 		</dict>
 		<key>8B9D8732-E752-4321-A069-E18B322416E1</key>
 		<dict>
 			<key>xpos</key>
-			<real>165</real>
+			<real>45</real>
 			<key>ypos</key>
-			<real>425</real>
+			<real>300</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

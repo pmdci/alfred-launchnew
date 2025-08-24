@@ -1,18 +1,30 @@
 # Launch New Instance — Alfred Workflow
 
-Quickly launch a **fresh process** of any macOS application — even if it’s already running.
+Quickly launch a **fresh process** of any macOS application—even if it’s already running.
 
-> macOS normally brings the existing instance to front; this workflow forces a **new process** via `open -n -a`.
+> macOS normally brings the existing instance to front;
+> this workflow forces a **new process** via `open -n -a`.
 
 ---
 
 ## Features
 
-- **Keyword:** `!! <AppName>` → spawns a new process of the app.
-- **Universal Action:** `Launch New Instance` (available on Application results).
-- **Hotkey:** configurable; acts on the selected app in Alfred and **skips** the Universal Actions list.
 - **Minimal code:** single `open -n -a` call; no dependencies.
-- **Alfred‑style icon:** SVG + PNG included; readable on light/dark backgrounds.
+- **Alfred‑style icon:** readable on light/dark backgrounds.
+
+### Keyword
+
+`!! <AppName>` → spawns a new process of the app.
+![Example of keyword launch in Alfred](assets/keyword.png)
+
+### Universal Action
+
+`Launch New Instance` (available on Application results).
+![Example of universal action launch in Alfred](assets/universal_action.png)
+
+### Hotkey
+
+Configurable in Alfred's workflow editor; acts on the selected app in Alfred and **skips** the Universal Actions list.
 
 ---
 
@@ -91,4 +103,4 @@ Configuration is all done inside Alfred’s Workflow editor:
 
 MIT License © 2025 Pedro Innecco
 
-Refer to [LICENSE](LICENSE) file.
+Refer to [LICENSE](LICENSE) file for more information.
