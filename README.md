@@ -15,12 +15,12 @@ Quickly launch a **fresh process** of any macOS application—even if it’s alr
 ### Keyword
 
 `!! <AppName>` → spawns a new process of the app.
-![Example of keyword launch in Alfred](assets/keyword.png)
+![Example of keyword launch in Alfred](src/keyword.png)
 
 ### Universal Action
 
 `Launch New Instance` (available on Application results).
-![Example of universal action launch in Alfred](assets/universal_action.png)
+![Example of universal action launch in Alfred](src/universal_action.png)
 
 ### Hotkey
 
@@ -53,8 +53,6 @@ ALFRED_DIR="$HOME/Library/Application Support/Alfred/Alfred.alfredpreferences/wo
 ln -s "$HOME/Code/alfred-launchnew/src" \
    "$ALFRED_DIR/com.pedroinnecco.launchnew"
 ```
-
-> Alfred identifies workflows by **Bundle ID** (here `com.pedroinnecco.launchnew`), not by folder name.
 
 ---
 

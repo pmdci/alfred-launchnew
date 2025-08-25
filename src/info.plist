@@ -156,9 +156,86 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>This workflow lets you spawn a new process of any macOS app.  
-Use the keyword `!! &lt;AppName&gt;` or the Universal Action to “Launch New Instance” from Alfred’s action list.  
-You can also assign a hotkey to instantly start a fresh copy of the selected app.</string>
+	<string># Launch New Instance — Alfred Workflow
+
+Quickly launch a **fresh process** of any macOS application—even if it’s already running.
+
+&gt; macOS normally brings the existing instance to front;
+&gt; this workflow forces a **new process** via `open -n -a`.
+
+---
+
+## Usage
+
+### 1) Keyword
+
+![Example of keyword launch in Alfred](keyword.png)
+
+Type the keyword and the app name:
+
+```text
+!! Safari
+!! VLC
+!! Terminal
+```
+
+### 2) Universal Action
+
+![Example of universal action launch in Alfred](universal_action.png)
+
+1. In Alfred, search for an app (e.g. _VLC_).
+2. Press **Action** (`→` or `fn+Return`) to open Universal Actions.
+3. Choose **Launch New Instance**.
+
+### 3) Hotkey (fastest)
+
+Assign a Hotkey in the workflow. With an app highlighted in Alfred, press your hotkey to spawn a new process immediately (skips the actions list).
+
+---
+
+## Configuration
+
+Configuration is all done inside Alfred’s Workflow editor:
+
+- **Keyword:** Open the workflow in Alfred Preferences and change the keyword (`!!` by default) to whatever you like.
+- **Hotkey:** In the workflow, double-click the Hotkey object to assign your preferred shortcut.
+
+---
+
+## Troubleshooting &amp; Notes
+
+- **Some apps resist duplication.** A few apps are single‑instance by design (shared locks, self‑activation). Behaviour is app‑dependent.
+- **Mac App Store sandboxing quirks.** If an app ignores `-n`, try launching by bundle path or with profile args (where supported).
+- **Universal Actions ordering.** Built‑ins always appear first; workflow actions are grouped by type then alphabetised. Use the **Hotkey** to bypass the list.
+
+---
+## Source
+
+Available at: https://github.com/pmdci/alfred-launchnew
+
+---
+
+## License
+
+MIT License © 2025 Pedro Innecco
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</string>
 	<key>uidata</key>
 	<dict>
 		<key>07A8890D-40E1-4C76-9BE0-199BBF20AA53</key>
@@ -195,7 +272,7 @@ You can also assign a hotkey to instantly start a fresh copy of the selected app
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
 	<string>pedroinnecco.com</string>
 </dict>
